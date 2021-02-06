@@ -1,0 +1,31 @@
+@import "./header-footer";
+@import "./flipboard";
+@import "./form";
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: $bg-colour;
+  background-size: cover;
+  color: $textc;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+*:focus {
+  outline: none !important;
+}

@@ -1,0 +1,177 @@
+.form-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  .descriptor {
+    // position: absolute;
+    margin-top: -80px;
+    text-align: right;
+    width: 400px;
+    padding-left: 200px;
+    margin: 0px auto 0 auto;
+
+    span {
+      font-size: large;
+      font-weight: bold;
+      color: #000;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .descriptor {
+      width: 100%;
+      padding: 0;
+      // background-color: #000;
+      // word-wrap: break-word;
+    }
+  }
+
+  .form {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    grid-gap: 10px;
+    transition: all 0.5s ease;
+
+    label {
+      // width: 100%;
+      position: relative;
+      // border: 3px solid #fff;
+      // background-color: #fff;
+
+      span {
+        position: absolute;
+      }
+
+      input {
+        // background-color: blue;
+        background-color: transparent;
+        padding: 35px 5px 5px 5px;
+        font-size: 24px;
+        width: 100%;
+        max-width: 300px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #000;
+        word-wrap: break-word;
+
+        // @media screen and (max-width: 350px) {
+        //   input {
+        //     background-color: red;
+        //     width: 100%;
+        //   }
+        // }
+      }
+    }
+  }
+}
+
+.btn-submit {
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 0 2px;
+  justify-self: start;
+  font-size: 14px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.007);
+  color: #000000;
+  border-radius: 300px;
+  border: none;
+  border: 1px solid #000;
+}
+
+@keyframes btn-loading {
+  0% {
+    background: linear-gradient(
+      90deg,
+      #2f6597 25%,
+      #408ed8 50%,
+      #4489ca 75%,
+      #4179ad 100%
+    );
+  }
+  33% {
+    background: linear-gradient(
+      90deg,
+      #4179ad 25%,
+      #2f6597 50%,
+      #408ed8 75%,
+      #2b74b8 100%
+    );
+  }
+  66% {
+    background: linear-gradient(
+      90deg,
+      #2b74b8 25%,
+      #4179ad 50%,
+      #2f6597 75%,
+      #408ed8 100%
+    );
+  }
+  100% {
+    background: linear-gradient(
+      90deg,
+      #408ed8 25%,
+      #2b74b8 50%,
+      #4179ad 75%,
+      #2f6597 100%
+    );
+  }
+}
+
+.btn-waiting {
+  // background-color: rgba(0, 0, 0, 0.555);
+  // border: 1px rgba(0, 0, 0, 0.822) solid;
+}
+
+.btn-success {
+  background-color: #63e75152;
+}
+.btn-failed {
+  background-color: #ff000054;
+}
+.btn-loading {
+  color: #da8cd3;
+  animation: btn-loading 450ms linear infinite;
+}
+
+.lyrics-container {
+  .lyrics-lyrics {
+    font-size: 18px;
+    line-height: 28px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+.lyrics-title {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #000;
+}
+
+.more-lyrics-btn {
+  margin-bottom: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 7px;
+  letter-spacing: 3px;
+  background-color: #000;
+  color: $textc;
+  border-radius: 3px;
+  border: none;
+}

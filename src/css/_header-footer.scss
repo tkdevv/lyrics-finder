@@ -1,0 +1,61 @@
+@import "./variables";
+
+.nav {
+  /* margin-top: -19px; */
+  height: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 10px;
+
+  @media (max-width: 450px) {
+    padding-left: 10px;
+    text-align-last: left;
+  }
+}
+
+.menu {
+  position: absolute;
+  right: 15px;
+  font-size: 10px;
+  top: 14px;
+  letter-spacing: 5px;
+}
+
+.search-again-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 10px;
+  padding: 7px;
+  letter-spacing: 5px;
+  background-color: #000;
+  color: antiquewhite;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer {
+  position: fixed;
+  font-size: small;
+  padding: 10px;
+  z-index: 10;
+  bottom: 0;
+  // min-height: 100vh;
+  background-color: transparent;
+  background-color: $bg-colour;
+  width: 100%;
+  display: flex;
+  /* background-image: url("./images/3d1ef44dSS3bbe288469b293b10669ce8e29.png");
+      background-size: cover; */
+  justify-content: center;
+  align-items: flex-end;
+  /* padding-bottom: 10px; */
+}

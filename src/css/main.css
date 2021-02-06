@@ -1,0 +1,328 @@
+.nav {
+  /* margin-top: -19px; */
+  height: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 15px;
+}
+
+.logo {
+  position: absolute;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 10px;
+}
+
+@media (max-width: 450px) {
+  .logo {
+    padding-left: 10px;
+    text-align-last: left;
+  }
+}
+
+.menu {
+  position: absolute;
+  right: 15px;
+  font-size: 10px;
+  top: 14px;
+  letter-spacing: 5px;
+}
+
+.search-again-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 10px;
+  padding: 7px;
+  letter-spacing: 5px;
+  background-color: #000;
+  color: antiquewhite;
+  border-radius: 3px;
+  border: none;
+}
+
+.footer {
+  position: fixed;
+  font-size: small;
+  padding: 10px;
+  z-index: 10;
+  bottom: 0;
+  background-color: transparent;
+  background-color: linear-gradient(0deg, #df8c8c, #ca86ca, #df8c8c);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* background-image: url("./images/3d1ef44dSS3bbe288469b293b10669ce8e29.png");
+      background-size: cover; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  /* padding-bottom: 10px; */
+}
+
+.scene {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  /* background-color: lightblue; */
+  -webkit-perspective: 50000em;
+          perspective: 50000em;
+}
+
+.plane {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  -webkit-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  background-color: #fff;
+}
+
+.page {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  /* margin: ; */
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background: transparent;
+  /* transform: translateZ(-20em); */
+  /* transform-style: preserve-3d; */
+}
+
+.plane:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.front-content {
+  position: relative;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(1px);
+          transform: translateZ(1px);
+}
+
+.back-content {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(10px);
+          transform: translateZ(10px);
+}
+
+.form-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.form-container .descriptor {
+  margin-top: -80px;
+  text-align: right;
+  width: 400px;
+  padding-left: 200px;
+  margin: 0px auto 0 auto;
+}
+
+.form-container .descriptor span {
+  font-size: large;
+  font-weight: bold;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .form-container .descriptor {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.form-container .form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  grid-gap: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.form-container .form label {
+  position: relative;
+}
+
+.form-container .form label span {
+  position: absolute;
+}
+
+.form-container .form label input {
+  background-color: transparent;
+  padding: 35px 5px 5px 5px;
+  font-size: 24px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  word-wrap: break-word;
+}
+
+.btn-submit {
+  margin-top: 20px;
+  font-weight: 600;
+  padding: 0 2px;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  font-size: 14px;
+  padding: 5px 10px;
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.007);
+  color: #000000;
+  border-radius: 300px;
+  border: none;
+  border: 1px solid #000;
+}
+
+@-webkit-keyframes btn-loading {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #2f6597), color-stop(50%, #408ed8), color-stop(75%, #4489ca), to(#4179ad));
+    background: linear-gradient(90deg, #2f6597 25%, #408ed8 50%, #4489ca 75%, #4179ad 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #4179ad), color-stop(50%, #2f6597), color-stop(75%, #408ed8), to(#2b74b8));
+    background: linear-gradient(90deg, #4179ad 25%, #2f6597 50%, #408ed8 75%, #2b74b8 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #2b74b8), color-stop(50%, #4179ad), color-stop(75%, #2f6597), to(#408ed8));
+    background: linear-gradient(90deg, #2b74b8 25%, #4179ad 50%, #2f6597 75%, #408ed8 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #408ed8), color-stop(50%, #2b74b8), color-stop(75%, #4179ad), to(#2f6597));
+    background: linear-gradient(90deg, #408ed8 25%, #2b74b8 50%, #4179ad 75%, #2f6597 100%);
+  }
+}
+
+@keyframes btn-loading {
+  0% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #2f6597), color-stop(50%, #408ed8), color-stop(75%, #4489ca), to(#4179ad));
+    background: linear-gradient(90deg, #2f6597 25%, #408ed8 50%, #4489ca 75%, #4179ad 100%);
+  }
+  33% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #4179ad), color-stop(50%, #2f6597), color-stop(75%, #408ed8), to(#2b74b8));
+    background: linear-gradient(90deg, #4179ad 25%, #2f6597 50%, #408ed8 75%, #2b74b8 100%);
+  }
+  66% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #2b74b8), color-stop(50%, #4179ad), color-stop(75%, #2f6597), to(#408ed8));
+    background: linear-gradient(90deg, #2b74b8 25%, #4179ad 50%, #2f6597 75%, #408ed8 100%);
+  }
+  100% {
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, #408ed8), color-stop(50%, #2b74b8), color-stop(75%, #4179ad), to(#2f6597));
+    background: linear-gradient(90deg, #408ed8 25%, #2b74b8 50%, #4179ad 75%, #2f6597 100%);
+  }
+}
+
+.btn-success {
+  background-color: #63e75152;
+}
+
+.btn-failed {
+  background-color: #ff000054;
+}
+
+.btn-loading {
+  color: #da8cd3;
+  -webkit-animation: btn-loading 450ms linear infinite;
+          animation: btn-loading 450ms linear infinite;
+}
+
+.lyrics-container .lyrics-lyrics {
+  font-size: 18px;
+  line-height: 28px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lyrics-title {
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: #000;
+}
+
+.more-lyrics-btn {
+  margin-bottom: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 20px;
+  font-size: 12px;
+  padding: 7px;
+  letter-spacing: 3px;
+  background-color: #000;
+  color: #fafafa;
+  border-radius: 3px;
+  border: none;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background: -webkit-gradient(linear, left bottom, left top, from(#df8c8c), color-stop(#ca86ca), to(#df8c8c));
+  background: linear-gradient(0deg, #df8c8c, #ca86ca, #df8c8c);
+  background-size: cover;
+  color: #fafafa;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+*:focus {
+  outline: none !important;
+}
+/*# sourceMappingURL=main.css.map */
