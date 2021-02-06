@@ -10,8 +10,12 @@
 
 # production
 /build
-
+/src/images
 # misc
+
+# images
+*.png
+
 .DS_Store
 .env.local
 .env.development.local
