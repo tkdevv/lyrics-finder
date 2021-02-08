@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Content from "./Content";
-import Footer from "./Footer";
 
 function App() {
   return (
